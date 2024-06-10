@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .navbar{
+            background-color: #000;
+            position: sticky;
+            border-bottom: 1px solid black;
+            box-shadow: 10px 0px 5px #ffffff;
+            top: 0;
+        }
+        .banner{
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/assets/images/bg2.jpg);
+        }
+        .image-box{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .col{
+            width: 32.5%;
+            
+        }  
+        .col img{
+            width: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            /* padding-bottom: 10px; */
+            /* box-shadow: 0 0 5px 1px #000; */
+
+        }
+        @media screen and (max-width: 900px) {
+            .image-box{
+            width: 90%;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        .image-box .col{
+            width: 48%;   
+        }
+        } 
+        @media screen and (max-width: 767px) {
+            .image-box{
+            width: 90%;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+            .image-box .col{
+            width: 100%;   
+        }
+        } 
+
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <div class="logo">
+                <a href="/index.html">
+                    <h1>
+                        Travelo
+                    </h1>
+                </a>
+            </div>
+            <div class="nav-link">
+                <ul>
+                    <a href="/index.html" >
+                        <li>Home</li>
+                    </a>
+                    <a href="/about.html">
+                        <li>About</li>
+                    </a>
+                    <a href="/image-gallery.html">
+                        <li class="active">Images</li>
+                    </a>
+                    <a href="/blog.html">
+                        <li>Blog</li>
+                    </a>
+                    <a href="contact.html">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="btn-group">
+                <a href="login.html" class="btn">Login</a>
+                <a href="login.html" class="btn">Signup</a>
+            </div>
+        </nav>
+    </div>
+    <!-- <section class="wrapper">
+        <div class="overlay"></div>
+    </section> -->
+    <section class="contact">
+        <div class="banner">
+            <h2>Images</h2>
+        </div>
+        <div class="image-box">
+            <div class="col">
+                <img src="https://source.unsplash.com/ciYOQZ7eKQ4" alt="">
+                <img src="./assets/images/image19.jpeg" alt="">
+                <img src="./assets/images/image2.jpeg" alt="">
+                <img src="./assets/images/image3.jpeg" alt="">
+                <img src="./assets/images/image4.jpeg" alt="">
+                <img src="./assets/images/image5.jpeg" alt="">
+                <img src="https://source.unsplash.com/200x2 00/?nature,water" alt="">
+            </div>
+            <div class="col">
+                <img src="./assets/images/image10.jpeg" alt="">
+                <img src="./assets/images/image12.jpeg" alt="">
+                <img src="./assets/images/image13.jpeg" alt="">
+                <img src="./assets/images/image14.jpeg" alt="">
+                <img src="./assets/images/image15.jpeg" alt="">
+                <img src="./assets/images/image16.jpeg" alt="">
+                <img src="./assets/images/image20.webp" alt="">
+                <img src="https://source.unsplash.com/400x500/?nature,city" alt="">
+            </div>
+            <div class="col">
+                <img src="https://source.unsplash.com/400x500/?nature,water" alt="">
+                <img src="./assets/images/image6.jpeg" alt="">
+                <img src="./assets/images/image8.jpeg" alt="">
+                <img src="./assets/images/image9.jpeg" alt="">
+                <img src="./assets/images/image10.jpeg" alt="">
+                <img src="./assets/images/image17.jpeg" alt="">
+                <img src="./assets/images/image18.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <footer>
+            <div class="footer-left">
+                <div class="logo">
+                    <a href="/index.html">
+                        <h1>
+                            Travelo
+                        </h1>
+                    </a>
+                    <div>
+                        <h3>Call us</h3>
+                        <p><i class="fa-solid fa-envelope"></i>example@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 8898773326</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-middle">
+                    <ul>
+                        <a href=""><li>Home</li></a>
+                        <a href=""><li>About</li></a>
+                        <a href=""><li>Listing</li></a>
+                        <a href=""><li>Blog</li></a>
+                        <a href=""><li>Contact</li></a>
+                    </ul>
+            </div>
+            <div class="footer-right">
+                <h3>Social Media Links</h3>
+                <div>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <ul style="display: flex; justify-content: center; list-style: none; " >
+                <a href=""><li>Term and Conditions</li></a>
+                <a href=""><li>Privacy polices</li></a>
+                <a href=""><li>Desclaimer</li></a>
+            </ul>
+            <p>	&#169; All copyright reserved by <a href="">Jit Information</a></p>
+        </div>
+    </section>
+</body>
+</html>
